@@ -1,7 +1,7 @@
 <?php
   session_start();
   if(isset($_SESSION["acc_user"])){
-    echo "User is on profile:";
+    // call data features [class object] 
   }else{
     header("Location: signin.html");
   }
@@ -64,7 +64,7 @@
       </div>
     </header>
     <section>
-      Hey user : Welcome to your profile page.
+      User : Welcome to your profile page.[DEMO]
     </section>
   </body>
 </html>

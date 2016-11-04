@@ -10,11 +10,10 @@
       $user = mysqli_query($link, $logq);
       if($user){
         $acc_fn = (string) $user["fname"];
-        echo $acc_fn;
-				/* $acc_id = (int) $user["u_id"]; //cast string to int value
-				$acc_email = (string) $data["email"];
+	$acc_id = (int) $user["u_id"]; //cast string to int value
+	$acc_email = (string) $data["email"];
         $_SESSION["acc_user"] = $acc_id;
-        header("Location: profile.php"); */
+        header("Location: profile.php");
       }else{
         echo "User could not login:";
       }
